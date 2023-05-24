@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+
+    <title>Little Pet Shop</title>
+
+</head>
+
+
+<header> <!-- TOPO DO CABEÇALHO DO SITE -->
+
+
+    <img id="logo" src="imgs/logo.png" alt="logo do site" />
+
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">HOME</a>
+
+    <a href="sobre.html">SOBRE</a>
+
+    <a href="grafico.html">GRÁFICOS</a>
+
+    <a href="login.html">LOGIN</a>
+
+    <a href="cadastro.html">CADASTRO</a>
+
+    <a href="agendamento.html">AGENDAMENTO</a>
+
+    <a href="contato.html">CONTATO</a>
+
+
+</nav>
+
+<!-- FIM DO CABEÇALHO DO SITE -->
+</header>
+
+<div id="div-agendamento"> <!-- CONTEÚDO DO SITE (CONTAINER) -->
+    <h1 id="h1-agendamento">AGENDAMENTO</h1>
+    <hr class="hr">
+    <div id="div-p">
+        <p><b>Encontre o melhor para o seu pet aqui! Agende um serviço conosco.</b></p>
+    </div>
+
+    <form id="div1agendamento">
+        <input id="inCLIE" name="inCLIE" class="campoForm" type="text" placeholder="Nome do cliente" />
+        <input id="inNome" name="inNome" class="campoForm" type="text" placeholder="Nome do pet" />
+        <select id="select" name="inServico" class="campoForm">
+            <option selected>Selecione um Serviço</option>
+            <option value="1">Compra de produtos</option>
+            <option value="2">Banho e Tosa em filhotes</option>
+            <option value="3">Banho e Tosa na tesoura</option>
+            <option value="4">Tosa higiênica</option>
+            <option value="5">Banho higiênico</option>
+            <option value="6">Tosa Verão</option>
+        </select>
+        <input id="inData" name="inData" class="campoForm" type="date" placeholder="data" />
+        <input id="inhora" name="inhora" class="campoForm" type="time" placeholder="Hora" />
+
+        <button id="botao-agendar" type="button" onclick="agendamento()">Agendar</button>
+        <button id="botao-cancelar" type="reset">Cancelar</button>
+    </form>
+
+
+    <div id="mensagem-erro"></div>
+    <div id="mensagem-acerto">
+        <table>
+            <thead>
+                <tr>
+                    <td>Cliente</td>
+                    <td>Pet</td>
+                    <td>Serviço</td>
+                    <td>Data</td>
+                    <td>Hora</td>
+                </tr>
+            </thead>
+            <tbody id="tabelaAgenda">
+               
+            </tbody>
+        </table>
+    </div>
+
+
+
+</div>
+</div> <!-- FIM DO CONTEÚDO DO SITE (CONTAINER) -->
+
+</form>
+<footer> <!-- RODAPÉ DO SITE -->
+    <p>
+        <span>LITTLE PET SHOP</span> <br />
+        R. Castelo Negro, 10 - Sonho Nosso I , Barra Bonita - SP, 17249-426<br />
+        Telefone: (14) 99999-9999
+    </p>
+</footer> <!-- FIM DO RODAPÉ DO SITE -->
+
+</body> <!-- FIM DO CORPO DO SITE -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

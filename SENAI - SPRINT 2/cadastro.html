@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+
+    <title>Little Pet Shop</title>
+
+</head>
+
+
+<header> <!-- TOPO DO CABEÇALHO DO SITE -->
+
+
+    <img id="logo" src="imgs/logo.png" alt="logo do site" />
+
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">HOME</a>
+
+    <a href="sobre.html">SOBRE</a>
+
+    <a href="grafico.html">GRÁFICOS</a>
+
+    <a href="login.html">LOGIN</a>
+
+    <a href="cadastro.html">CADASTRO</a>
+
+    <a href="agendamento.html">AGENDAMENTO</a>
+
+    <a href="contato.html">CONTATO</a>
+
+
+</nav>
+
+<!-- FIM DO CABEÇALHO DO SITE -->
+</header>
+
+<div id="div-cadastro"> <!-- CONTEÚDO DO SITE (CONTAINER) -->
+    <div id="div1-cadastro">
+        <h1 id="cadastre">CADASTRE-SE</h1>
+        <div id="hr">
+            <hr class="hr">
+
+        </div>
+        <div id="div2-cadastro">
+
+            <form id="frmRegistro" name="frmRegistro" action="#">
+                <input id="inNomeCompleto" name="inNomeCompleto" type="text" placeholder="nomeCompleto" required />
+                <input id="inDataNascimento" name="inDataNascimento" type="date" placeholder="dataDeNacimento"
+                    required />
+                <input id="inCpf" name="inCpf" type="text" placeholder="CPF" required />
+                <input id="inEndereco" name="inEndereco" type="text" placeholder="endereço" required />
+                <input id="inCidade" name="inCidade" type="text" placeholder="cidade" required />
+                <input id="inSiglaDoEstado" name="inSiglaDoEstado" type="text" placeholder="SiglaDoEstado" required />
+                <input id="inEmail" name="inEmail" type="email" placeholder="nome@dominio.com.br" required />
+                <input id="inTelefone" name="inTelefone" type="number" placeholder="(99) 99999-9999" required />
+                <input id="inSenha" name="inSenha" type="text" placeholder="Senha" required />
+
+                <h1 id="cadastre">CADASTRE SEU PET</h1>
+                <input id="inNomeDoPet" name="inNomeDoPet" type="text" placeholder="nomeDoPet" required />
+                <select id="selects" name="selects" class="campoForm" onchange="exibircampo()">
+
+                    <option selected>Selecione o tipo do pet</option>
+                    <option>Cães</option>
+                    <option>Gatos</option>
+                    <option>Passáros</option>
+                    <option>Haminters</option>
+                    <option>Peixes</option>
+                    <option>Outros</option>
+                </select>
+                <input id="outros" name="outros" type="text" placeholder="específique o seu pet"/>
+                <input id="dtNasPet" name="dtNasPet" type="date" placeholder="Idade" required />
+                <input id="inIdade" name="inIdade" type="text" placeholder="Idade" required />
+                <div id="frm-buttons">
+                    <button id="botao-cadastrar" type="button" onclick="aviso();" Cadastar>
+                        Cadastrar
+                        <button id="botao-cancelar" type="reset" formaction="#" Cancelar>
+                            Cancelar
+                </div>
+
+                <div id="mensagem-erro">Mensagem de erro:</div>
+        </div>
+
+        </form>
+        <p id="esqueceu">Esqueceu sua senha?</p>
+
+        <div id="div3-cadastro">
+            <p>Já tem uma conta??</p>
+            <p id="p-conectar">Conecte-se</p>
+        </div>
+
+    </div>
+
+    <!-- </div> -->
+</div> <!-- FIM DO CONTEÚDO DO SITE (CONTAINER) -->
+
+<footer> <!-- RODAPÉ DO SITE -->
+    <p>
+        <span>LITTLE PET SHOP</span> <br />
+        R. Castelo Negro, 10 - Sonho Nosso I , Barra Bonita - SP, 17249-426<br />
+        Telefone: (14) 99999-9999
+    </p>
+</footer> <!-- FIM DO RODAPÉ DO SITE -->
+
+</body> <!-- FIM DO CORPO DO SITE -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

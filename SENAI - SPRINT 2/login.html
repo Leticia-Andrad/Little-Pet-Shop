@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+    <link rel="icon" type="image/png" href="imgs/logo.png">
+
+    <title>Little Pet Shop</title>
+
+</head>
+
+
+<header> <!-- TOPO DO CABEÇALHO DO SITE -->
+
+
+    <img id="logo" src="imgs/logo.png" alt="logo do site" />
+
+
+</header>
+
+
+<nav>
+
+    <a href="index.html">HOME</a>
+
+    <a href="sobre.html">SOBRE</a>
+
+    <a href="grafico.html">GRÁFICOS</a>
+
+    <a href="login.html">LOGIN</a>
+
+    <a href="cadastro.html">CADASTRO</a>
+
+    <a href="agendamento.html">AGENDAMENTO</a>
+
+    <a href="contato.html">CONTATO</a>
+
+
+</nav>
+
+<!-- FIM DO CABEÇALHO DO SITE -->
+    </header> 
+    <div id="login"> <!-- CONTEÚDO DO SITE (CONTAINER) -->
+        <div id="div1">
+            <h1 id="faca-login">FAÇA SEU LOGIN</h1>
+            <hr class="hr">
+            <div id="div2">
+                <div id="mensagem-erro"></div>
+                <form id="frmLog" name="frmLog" action="#">
+                    <div id="divs10">
+
+                    <input id="inEmail" type="email" name="email" placeholder="E-mail" id="email"/>
+
+                    <input id="inSenha" type="password" name="senha" placeholder="Senha" id="passaword"/>
+                    </div>
+
+                    <div id="frm-buttons">
+                        <button id="botao-entrar" type="button"
+                        onclick="login()">Entrar</button>
+                    </div>
+                </form>
+                <div id="hr">
+                    <hr class="hr">
+                    <hr class="hr">
+                </div>
+                <p id="esqueceu">Esqueceu sua senha?</p>
+
+            </div>
+            <div id="div3">
+                <p>Ainda não tem conta?</p>
+                <button id="botao-cadastre-se" type="button" formaction="#">
+                    Cadastre-se
+                    </button>
+            </div>
+        </div>
+    </div> <!-- FIM DO CONTEÚDO DO SITE (CONTAINER) -->
+
+
+
+
+    <footer> <!-- RODAPÉ DO SITE -->
+        <p>
+            <span>LITTLE PET SHOP</span> <br />
+            R. Castelo Negro, 10 - Sonho Nosso I , Barra Bonita - SP, 17249-426<br />
+            Telefone: (14) 99999-9999
+        </p>
+    </footer> <!-- FIM DO RODAPÉ DO SITE -->
+
+</body> <!-- FIM DO CORPO DO SITE -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>
